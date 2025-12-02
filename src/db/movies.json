@@ -1,6 +1,12 @@
 {
   "filmes": [
     {
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlz0Cw5zS1DVbZJzkrhh87QI5CduAWDizUw03zD7hYvdZD0AEeB5-kET4Zc7Ibj5UCKz0&usqp=CAU",
+      "title": "Lilo & Stitch",
+      "description": "Uma garota solitária no Havaí adota um \"cachorro\" que na verdade é um experimento genético alienígena perigoso. Juntos, eles descobrem o verdadeiro significado de 'Ohana' (família).",
+      "hero_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlz0Cw5zS1DVbZJzkrhh87QI5CduAWDizUw03zD7hYvdZD0AEeB5-kET4Zc7Ibj5UCKz0&usqp=CAU"
+    },
+    {
       "src": "https://br.web.img2.acsta.net/pictures/23/05/08/10/29/0695770.jpg",
       "alt": "Imagem de capa do filme Oppenheimer",
       "title": "Oppenheimer",
@@ -25,28 +31,35 @@
       "hero_image": "https://wallpapers.com/images/hd/spider-man-across-the-spider-verse-imax-poster-74c10p9h3z9tq2l1.jpg"
     },
     {
-      "src": "https://br.web.img3.acsta.net/pictures/20/09/25/11/47/3331002.jpg",
+      "src": "https://www.europanet.com.br/upload/id_produto/107___/107350g.jpg",
       "alt": "Imagem de capa do filme Duna",
       "title": "Duna",
       "description": "Uma jornada mítica e emocional de Paul Atreides a um planeta perigoso.",
       "tagline": "O medo é o assassino da mente.",
-      "hero_image": "https://images.alphacoders.com/112/1128330.jpg"
+      "hero_image": "https://www.europanet.com.br/upload/id_produto/107___/107350g.jpg"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/pt/thumb/d/d4/The_Matrix_Poster.jpg/250px-The_Matrix_Poster.jpg",
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJo4hJ4Ht1SOb3jNujecCT0V9zMxKgjdnzw&s",
       "alt": "Imagem de capa do filme Matrix",
       "title": "Matrix",
       "description": "Um programador de computador descobre que a realidade é uma simulação.",
       "tagline": "Bem-vindo à realidade.",
-      "hero_image": "https://images.hdqwalls.com/download/the-matrix-1999-movie-poster-4k-4g-1920x1080.jpg"
+      "hero_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJo4hJ4Ht1SOb3jNujecCT0V9zMxKgjdnzw&s"
     },
     {
-      "src": "https://br.web.img3.acsta.net/c_310_420/pictures/22/07/04/16/09/5312384.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/pt/b/b0/Avatar-Teaser-Poster.jpg",
       "alt": "Imagem de capa do filme Avatar: O Caminho da Água",
       "title": "Avatar: O Caminho da Água",
       "description": "Jake Sully e Ney'tiri formaram uma família e fazem de tudo para permanecerem juntos.",
       "tagline": "A família é a nossa fortaleza.",
-      "hero_image": "https://c4.wallpaperflare.com/wallpaper/528/739/299/avatar-the-way-of-water-avatar-jake-sully-neytiri-kiri-lo-wallpaper-preview.jpg"
+      "hero_image": "https://upload.wikimedia.org/wikipedia/pt/b/b0/Avatar-Teaser-Poster.jpg"
+    },
+    {
+      "src": "https://m.media-amazon.com/images/M/MV5BYjQwODEyYTYtN2EzOS00ZTE1LTg5M2UtMzcwN2ViMjVlNDlhXkEyXkFqcGc@._V1_.jpg",
+      "alt": "Imagem da capa do filme Truque de Mestre: O 3° Ato",
+      "title": "Truque de Mestre: O 3° Ato",
+      "description": "Quatro cavaleiros se reúnem para um novo golpe em Londres, mas são forçados por um magnata da tecnologia a roubar um chip que controla todos os sistemas de dados do mundo.",
+      "hero_image": "https://m.media-amazon.com/images/M/MV5BYjQwODEyYTYtN2EzOS00ZTE1LTg5M2UtMzcwN2ViMjVlNDlhXkEyXkFqcGc@._V1_.jpg"
     }
   ]
 }

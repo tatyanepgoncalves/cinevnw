@@ -15,7 +15,7 @@ import filmesData from '../../db/movies.json';
 
 
 export const Hero = () => {
-  const filmeEmDestaque = filmesData.filmes.slice(0,3);
+  const filmeEmDestaque = filmesData.filmes;
 
   return (
     <section id="home" className={h.HeroWrapper}>
