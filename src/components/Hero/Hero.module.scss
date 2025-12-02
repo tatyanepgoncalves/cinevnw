@@ -1,56 +1,65 @@
 @use "../../styles/variables.scss" as v;
 
-.Hero {
-  position: relative;
+.HeroWrapper {
   width: 100%;
   height: 100vh;
-  background-image: url("https://br.web.img2.acsta.net/pictures/23/05/08/10/29/0695770.jpg");
+  position: relative;
+  overflow: hidden;
+}
+
+.HeroSwiper, .HeroSlide {
+  width: 100%;
+  height: 100%;
+}
+
+.SlideBackground {
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   padding: v.$padding-default;
-  color: v.$white;
-  z-index: -1;
+  position: relative;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-
-    // Gradiente que escurece a parte inferior e esquerda, onde o texto está
-    background: linear-gradient(
-      to right,
-      rgba(20, 20, 20, 0.9), 
-      rgba(20, 20, 20, 0) 60%  
-    );
-  }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // Gradiente escuro para legibilidade, aplicado sobre a imagem
+  background: linear-gradient(
+    to right,
+    rgba(20, 20, 20, 0.9) 10%, 
+    rgba(20, 20, 20, 0.2) 60%,
+    rgba(20, 20, 20, 0) 100%
+  );
 }
 
 .HeroContent {
-  position: relative; // Garante que o conteúdo fique sobre o gradiente
-  z-index: 100;
-  max-width: 600px;
+  position: relative; 
+  z-index: 10; // Fica sobre a imagem e o overlay
+  max-width: 650px;
+  color: v.$white;
   
   h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin: 10px 0 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
   .tagline {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: rgba(255, 255, 255, 0.2);
-    display: block; // Garante que fique em uma linha própria
+    display: block; 
     margin-bottom: 5px;
   }
-  
+
   .description {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    line-height: 1.6;
     margin-bottom: 30px;
   }
 }
@@ -70,4 +79,15 @@
   &:hover {
     background-color: rgba(255, 152, 0, 0.1);
   }
+}
+
+// Estilização da paginação do Swiper (os pontinhos)
+:global(.swiper-pagination-bullet) {
+  background: v.$white !important;
+  opacity: 0.5 !important;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  background: v.$white !important;
+  opacity: 1 !important;
 }
