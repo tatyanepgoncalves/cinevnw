@@ -1,0 +1,14 @@
+@use "./styles/variables.scss" as v;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: v.$bg;
+  color: v.$white;
+}

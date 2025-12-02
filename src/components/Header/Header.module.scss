@@ -1,0 +1,55 @@
+@use "../../styles/variables.scss" as v;
+
+.Header {
+  background-color: v.$bgHeader;
+  border-bottom: 2px solid v.$primaryColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: v.$shadowlg;
+
+  div {
+    padding: 1.5rem 2rem;
+    width: 100%;
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.logo {
+  a {
+    font-size: 2.5rem;
+    color: v.$primaryColor;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  a {
+    color: v.$white;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: v.$primaryColor;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (width > 64rem) {
+  .Header {
+    div {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

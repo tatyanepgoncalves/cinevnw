@@ -1,0 +1,40 @@
+{
+  "filmes": [
+    {
+      "src": "https://br.web.img2.acsta.net/pictures/23/05/08/10/29/0695770.jpg",
+      "alt": "Imagem de capa do filme Oppenheimer",
+      "title": "Oppenheimer",
+      "description": "A história do criador da bomba atômica."
+    },
+    {
+      "src": "https://br.web.img2.acsta.net/c_310_420/pictures/23/06/21/21/10/1335465.jpg",
+      "alt": "Imagem de capa do filme Barbie",
+      "title": "Barbie",
+      "description": "Uma aventura divertida no mundo real e no mundo cor-de-rosa."
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/pt/1/14/Spide-Man_Poster.jpg",
+      "alt": "Imagem de capa do filme Homem-Aranha",
+      "title": "Homem-Aranha",
+      "description": "Universos colidem e heróis se unem!"
+    },
+    {
+      "src": "https://www.europanet.com.br/upload/id_produto/107___/107350g.jpg",
+      "alt": "Imagem de capa do filme Duna",
+      "title": "Duna",
+      "description": "Uma jornada mítica e emocional de Paul Atreides a um planeta perigoso."
+    },
+    {
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJo4hJ4Ht1SOb3jNujecCT0V9zMxKgjdnzw&s",
+      "alt": "Imagem de capa do filme Matrix",
+      "title": "Matrix",
+      "description": "Um programador de computador descobre que a realidade é uma simulação."
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/pt/b/b0/Avatar-Teaser-Poster.jpg",
+      "alt": "Imagem de capa do filme Avatar: O Caminho da Água",
+      "title": "Avatar: O Caminho da Água",
+      "description": "Jake Sully e Ney'tiri formaram uma família e fazem de tudo para permanecerem juntos."
+    }
+  ]
+}

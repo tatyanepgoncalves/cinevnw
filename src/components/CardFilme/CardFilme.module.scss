@@ -1,0 +1,43 @@
+@use "../../styles/variables.scss" as v;
+
+.Card {
+  background-color: v.$bgCard;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 300px;
+  text-align: center;
+  box-sizing: v.$shadowCard;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &:hover {
+    border: 1px solid v.$primaryColor;
+    scale: 1.1;
+    box-shadow: v.$shadowCard;
+  }
+
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+}
+
+.CardElement {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  h2 {
+    font-size: 1.1rem;
+    color: v.$primaryColor;
+  }
+
+  p {
+    color: v.$zinc200;
+    font-size: 0.9rem;
+  }
+}

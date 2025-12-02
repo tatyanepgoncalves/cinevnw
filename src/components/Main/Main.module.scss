@@ -1,0 +1,30 @@
+@use "../../styles/variables.scss" as v;
+
+.Main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .MainContainer {
+    width: 100%;
+    max-width: 64rem;
+    padding: 4rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}

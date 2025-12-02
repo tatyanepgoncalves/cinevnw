@@ -1,0 +1,73 @@
+@use "../../styles/variables.scss" as v;
+
+.Hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://br.web.img2.acsta.net/pictures/23/05/08/10/29/0695770.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: v.$padding-default;
+  color: v.$white;
+  z-index: -1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    // Gradiente que escurece a parte inferior e esquerda, onde o texto está
+    background: linear-gradient(
+      to right,
+      rgba(20, 20, 20, 0.9), 
+      rgba(20, 20, 20, 0) 60%  
+    );
+  }
+}
+
+.HeroContent {
+  position: relative; // Garante que o conteúdo fique sobre o gradiente
+  z-index: 100;
+  max-width: 600px;
+  
+  h1 {
+    font-size: 3.5rem;
+    margin: 10px 0 20px;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.2);
+    display: block; // Garante que fique em uma linha própria
+    margin-bottom: 5px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+}
+
+.buttonPrimary {
+  background-color: v.$primaryColor;
+  color: v.$white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(255, 152, 0, 0.1);
+  }
+}
