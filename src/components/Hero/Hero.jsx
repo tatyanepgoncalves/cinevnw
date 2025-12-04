@@ -28,7 +28,7 @@ export const Hero = () => {
           >
           {filmeEmDestaque.map((movie, index) => (
             <SwiperSlide key={index} className={h.HeroSlide}>
-              <div className={h.SlideBackground} style={{backgroundImage: `url(${movie.src})` }}>
+              <div className={h.SlideBackground} style={{backgroundImage: `url(${movie.hero_image})` }}>
                 {/* Gradiente de sobreposição (definido no CSS) */}
                 <div className={h.overlay}></div>
                 {/* Conteúdo do Slide */}

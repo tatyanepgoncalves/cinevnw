@@ -13,13 +13,13 @@ export const useHeader = () => {
         setIsScrolled(false)
       }
 
-      // Add o listener
-      window.addEventListener("scroll", handleScroll)
+    }
+    // Add o listener
+    window.addEventListener("scroll", handleScroll)
 
-      // remove o listener ao desmontar o componente (cleanup)
-      return () => {
-        window.removeEventListener("scroll", handleScroll)
-      }
+    // remove o listener ao desmontar o componente (cleanup)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
     }
   }, []) // O array vazio garante que o efeito só seja executado uma vez
 
