@@ -20,30 +20,30 @@ export const Hero = () => {
   return (
     <section id="home" className={h.HeroWrapper}>
       <Swiper 
-        modules={[Autoplay, EffectFade, Pagination]} 
-        effect="fade"
-        slidesPerView={1} 
-        loop={true} 
-        autoplay={{ delay: 5000, disableOnInteraction: false }} className={h.HeroSwiper}
-        >
-        {filmeEmDestaque.map((movie, index) => (
-          <SwiperSlide key={index} className={h.HeroSlide}>
-            <div className={h.SlideBackground} style={{backgroundImage: `url(${movie.src})` }}>
-              {/* Gradiente de sobreposição (definido no CSS) */}
-              <div className={h.overlay}></div>
-              {/* Conteúdo do Slide */}
-              <div className={h.HeroContent}>
-                  <span className={h.tagline}>{movie.tagline || 'Filme em Cartaz'}</span>
-                  <h1>{movie.title}</h1>
-                  <p className={h.description}>{movie.description}</p>
-                  <button className={h.buttonPrimary}>
-                      Ver Detalhes
-                  </button>
+          modules={[Autoplay, EffectFade, Pagination]} 
+          effect="fade"
+          slidesPerView={1} 
+          loop={true} 
+          autoplay={{ delay: 5000, disableOnInteraction: false }} className={h.HeroSwiper}
+          >
+          {filmeEmDestaque.map((movie, index) => (
+            <SwiperSlide key={index} className={h.HeroSlide}>
+              <div className={h.SlideBackground} style={{backgroundImage: `url(${movie.src})` }}>
+                {/* Gradiente de sobreposição (definido no CSS) */}
+                <div className={h.overlay}></div>
+                {/* Conteúdo do Slide */}
+                <div className={h.HeroContent}>
+                    <span className={h.tagline}>{movie.tagline || 'Filme em Cartaz'}</span>
+                    <h1>{movie.title}</h1>
+                    <p className={h.description}>{movie.description}</p>
+                    <button className={h.buttonPrimary}>
+                        Ver Detalhes
+                    </button>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            </SwiperSlide>
+          ))}
+        </Swiper>
     </section>
   )
 }

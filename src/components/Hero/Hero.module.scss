@@ -42,8 +42,10 @@
   position: relative; 
   z-index: 10; // Fica sobre a imagem e o overlay
   max-width: 650px;
+  width: 100%;
   color: v.$white;
-  
+  padding: 20px 60px;
+
   h1 {
     font-size: 4rem;
     margin: 10px 0 20px;
