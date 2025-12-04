@@ -1,55 +1,73 @@
 @use "../../styles/variables.scss" as v;
 
 .Header {
-  background-color: v.$bgHeader;
-  border-bottom: 2px solid v.$primaryColor;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  
+
+  
+  background-color: transparent;
+  transition: background-color 0.4s ease-in-out;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: v.$shadowlg;
+  padding: 20px 60px;
+}
 
-  div {
-    padding: 1.5rem 2rem;
-    width: 100%;
-    max-width: 64rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
+.HeaderContainer {
+  width: 100%;
+  max-width: 64rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HeaderScrolled {
+ background-color: v.$background-dark; 
+}
+
+.HeaderLeft {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   a {
-    font-size: 2.5rem;
-    color: v.$primaryColor;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+    font-size: 1.8rem;
+  font-weight: 700;
+  color: v.$primaryColor; // Cor do logo
+  margin-right: 30px;
+  cursor: pointer;
   }
 }
 
 .menu {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  gap: 20px;
 
   a {
     color: v.$white;
-    letter-spacing: 1px;
-    transition: all 0.5s ease;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
 
     &:hover {
-      color: v.$primaryColor;
-      font-weight: 600;
+      opacity: 1;
     }
   }
 }
 
-@media (width > 64rem) {
-  .Header {
-    div {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
+.HeaderRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: v.$white;
+}
+
+.Search, .Notification, .Avatar {
+  cursor: pointer;
 }
