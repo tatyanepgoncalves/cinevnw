@@ -2,15 +2,17 @@
 
 .Card {
   background-color: v.$bgCard;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   border-radius: 0.5rem;
   width: 300px;
+  height: 450px;
   text-align: center;
   box-sizing: v.$shadowCard;
 
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  justify-content: space-between;
+  gap: 1rem;
 
   &:hover {
     border: 1px solid v.$primaryColor;
@@ -29,7 +31,7 @@
 .CardElement {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0.8rem;
 
   h2 {
     font-size: 1.1rem;
@@ -39,5 +41,15 @@
   p {
     color: v.$zinc200;
     font-size: 0.9rem;
+    line-height: 1.2em;
+    display: -webkit-box; /* Para navegadores WebKit (Chrome, Safari) */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Número de linhas a mostrar */
+    line-clamp: 2;
+    overflow: hidden;
+    /* Você também pode precisar de: max-height ou height */
+    max-height: 3.6em; /* Exemplo: 3 linhas * 1.2em de line-height */
+
   }
 }
+
